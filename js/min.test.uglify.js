@@ -1,0 +1,1 @@
+var fn=function(){var n="123",r=function(r){return n+r};return r}(),string=fn("456");alert(string);

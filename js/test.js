@@ -1,3 +1,13 @@
-var init = 1;
+var fn = (function() {
+	var string = '123',
 
-alert(init);
+	concatString = function(s) {
+		return string + s;
+	};
+
+	return concatString;
+})();
+
+var string = fn('456');
+
+alert(string);

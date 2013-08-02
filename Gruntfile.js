@@ -6,7 +6,7 @@ module.exports = function(grunt) {
             frontend: {
               closurePath: 'bin',
               js: 'js/test.js',
-              jsOutputFile: 'js/test.google.js',
+              jsOutputFile: 'js/min.test.google.js',
               maxBuffer: 500,
               options: {
                 compilation_level: 'ADVANCED_OPTIMIZATIONS'/*,
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         uglify: {
             build : {
                 src : 'js/test.js',
-                dest : 'js/test.uglify.js'
+                dest : 'js/min.test.uglify.js'
             }
         }
     });
